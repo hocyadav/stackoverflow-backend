@@ -3,7 +3,7 @@
 Simple stack overflow backend
 
 Test : 
-https://stack-overflow-backend.herokuapp.com/post
+http://stack-overflow-backend.herokuapp.com/post
 
 OR 
 
