@@ -3,11 +3,18 @@
 Simple stack overflow backend
 
 Test : 
-All Post : https://stack-overflow-backend.herokuapp.com/post
+https://stack-overflow-backend.herokuapp.com/post
 
-User 1 dashboard : https://stack-overflow-backend.herokuapp.com/user/1
+OR 
 
-All users : https://stack-overflow-backend.herokuapp.com/user/
+download and run below command
+
+
+ `java -jar developer-v1.jar`
+ 
+ 
+ download link : https://github.com/hocyadav/stackoverflow-backend/releases/download/v1/developer-v1.jar
+
 
 
 
