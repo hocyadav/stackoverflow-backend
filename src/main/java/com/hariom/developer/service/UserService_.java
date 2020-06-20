@@ -25,6 +25,9 @@ public class UserService_ implements GenericService<User_>{
 
 	@Autowired
 	NotificationDao notiDao;
+	
+	@Autowired
+	TagService tagService;
 
 	@Override
 	public Collection<User_> getAll() {
@@ -38,17 +41,17 @@ public class UserService_ implements GenericService<User_>{
 
 	@Override
 	public void removeById(int id) {
-
+		userDao.removeById(id);
 	}
 
 	@Override
 	public void insert(User_ newObj) {
-
+		userDao.insert(newObj);
 	}
 
 	@Override
 	public void update(User_ oldObj) {
-
+		userDao.update(oldObj);
 	}
 
 	/**
@@ -68,22 +71,10 @@ public class UserService_ implements GenericService<User_>{
 		//			e.printStackTrace();
 		//		}
 		//add key = userid, value its question
-
-		Notification nn = notiDao.getById(uid);
-		if(nn == null) {
-			nn = new Notification();
-			nn.setUserId(uid);
-		}
-		nn.getListOfQuestions().add(question.getQuestion());
-
-		notiDao.insert(nn);
-
-		int size = nn.getListOfQuestions().size();
-
-
 		User_ user__ = userDao.getById(uid);
-		System.out.println(user__);
-		user__.setNotificationCount(size);
+
+		tagService.pushNotification(question);
+		
 		user__.getQuestions().add(question);
 
 	}

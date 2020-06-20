@@ -14,12 +14,12 @@ public class Answer {
 	
 	public Answer() {
 		super();
-		this.ansId = NextID.ansID();
+		this.ansId = NextID.getAnswerUniqueID();
 	}
 	
 	public Answer(int queId, String answer, int voteCount) {
 		super();
-		this.ansId = NextID.ansID();
+		this.ansId = NextID.getAnswerUniqueID();
 		this.queId = queId;
 		this.answer = answer;
 		this.voteCount = voteCount;

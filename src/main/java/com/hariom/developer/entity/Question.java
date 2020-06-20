@@ -28,11 +28,11 @@ public class Question {
 	
 	public Question() {
 		super();
-		this.qid = NextID.ansID();
+		this.qid = NextID.getQuestionUniqueID();
 	}
 	public Question(String question, List<Tag> tags) {
 		super();
-		this.qid = NextID.ansID();
+		this.qid = NextID.getQuestionUniqueID();
 		this.question = question;
 		this.tags = tags;
 	}

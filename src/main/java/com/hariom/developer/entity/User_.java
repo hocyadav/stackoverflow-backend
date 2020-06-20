@@ -21,11 +21,11 @@ public class User_ {
 	
 	public User_() {
 		super();
-		userID = NextID.userID();
+		userID = NextID.getUserUniqueID();
 	}
 	public User_(String name) {
 		super();
-		userID = NextID.userID();
+		userID = NextID.getUserUniqueID();
 		this.name = name;
 	}
 	public int getUserID() {

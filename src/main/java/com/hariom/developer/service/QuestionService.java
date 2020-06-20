@@ -57,7 +57,8 @@ public class QuestionService implements GenericService<Question>{
 
 	public Answer getQueAns(int qid, int aid) {
 		List<Answer> allAnswers = queDB.getById(qid).getAllAnswers();
-		List<Answer> collect = allAnswers
+		List<Answer> collect = 
+				allAnswers
 				.stream()
 				.filter(f -> f.getAnsId() == aid)
 				.collect(Collectors.toList());
@@ -71,7 +72,11 @@ public class QuestionService implements GenericService<Question>{
 	
 
 	public Answer getSingleAns(int qid, int ansID) {
-		 List<Answer> collect = getQueAllAns(qid).stream().filter(it -> it.getAnsId() == ansID).collect(Collectors.toList());
+		 List<Answer> collect = 
+				 getQueAllAns(qid)
+				 .stream()
+				 .filter(it -> it.getAnsId() == ansID)
+				 .collect(Collectors.toList());
 		 return (collect.size() > 0) ? collect.get(0) : null;
 	}
 

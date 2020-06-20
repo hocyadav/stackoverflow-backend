@@ -26,18 +26,24 @@ public class UserDAO_ implements GenericDB<User_>{
 
 		allData = new HashMap<Integer, User_>(){
 			{
-				User_ u1 = extracted();
+				User_ u1 = dummyDataSet1();
 				put(u1.getUserID(), u1);
 				
-				User_ u2 = extracted2();
+				User_ u2 = dummyDataSet2();
 				put(u2.getUserID(), u2);
 			}
 
-			private User_ extracted() {
+			private User_ dummyDataSet1() {
 				User_ u1 = new User_();
 				u1.setName("Hariom Yadav");
 				u1.setDesignation("Software Engineer");
 				u1.setLocation("Bangalore, Karnataka");
+				
+				List<Tag> userTags = new LinkedList();
+				userTags.add(new Tag("java"));
+				u1.setUserTags(userTags);
+				
+				
 				List<Question> qq = new LinkedList<Question>();
 				//que start
 				Question e = new Question("How to add elements of a Java8 stream into an existing List ?", null);
@@ -60,11 +66,17 @@ public class UserDAO_ implements GenericDB<User_>{
 			}
 			
 			
-			private User_ extracted2() {
+			private User_ dummyDataSet2() {
 				User_ u1 = new User_();
 				u1.setName("Omprakash");
 				u1.setDesignation("Software Engineer 2");
 				u1.setLocation("Bangalore, Karnataka");
+				
+				List<Tag> userTags = new LinkedList();
+				userTags.add(new Tag("java"));
+				userTags.add(new Tag("python"));
+				u1.setUserTags(userTags);
+				
 				List<Question> qq = new LinkedList<Question>();
 				Question e = new Question("How to add elements of a Java8 stream into an existing List ?", null);
 				
@@ -98,12 +110,12 @@ public class UserDAO_ implements GenericDB<User_>{
 
 	@Override
 	public void removeById(int id) {
-
+		allData.remove(id);
 	}
 
 	@Override
 	public void insert(User_ newObj) {
-
+		allData.put(newObj.getUserID(), newObj);
 	}
 
 	@Override
