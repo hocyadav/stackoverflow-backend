@@ -17,5 +17,5 @@ https://www.evernote.com/l/AGD08pwCwxFPlbxmVpOu90cK3LGG7ggDrL4
 
 ## 3 Entity Class Diagram :
 
+![stack__](https://user-images.githubusercontent.com/56931032/85318394-8b88ec80-b4dd-11ea-9c5b-b1ca1da9e30a.jpg)
 
-![stack_](https://user-images.githubusercontent.com/56931032/85315429-ad33a500-b4d8-11ea-90ec-8938f7a68062.jpg)
