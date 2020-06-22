@@ -10,7 +10,7 @@ OR
 download and run below command
 
 
- `java -jar developer-v1.jar`
+    java -jar developer-v1.jar
  
  
  download link : https://github.com/hocyadav/stackoverflow-backend/releases/download/v1/developer-v1.jar
