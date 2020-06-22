@@ -15,7 +15,7 @@ download link : https://github.com/hocyadav/stackoverflow-backend/releases/downl
 https://www.evernote.com/l/AGD08pwCwxFPlbxmVpOu90cK3LGG7ggDrL4
 
 
-## 3 Class Diagram :
+## 3 Entity Class Diagram :
 
 
 ![stack_](https://user-images.githubusercontent.com/56931032/85315429-ad33a500-b4d8-11ea-90ec-8938f7a68062.jpg)
