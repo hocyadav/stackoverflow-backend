@@ -2,7 +2,7 @@
 
 Simple stack overflow backend
 
-### Test
+## Test
 http://stack-overflow-backend.herokuapp.com/post
 
 OR 
@@ -18,11 +18,11 @@ download and run below command
 
 
 
-### Api Details : 
+## Api Details : 
 https://www.evernote.com/l/AGD08pwCwxFPlbxmVpOu90cK3LGG7ggDrL4
 
 
-### Class Diagram :
+## Class Diagram :
 
 
 ![stack_](https://user-images.githubusercontent.com/56931032/85315429-ad33a500-b4d8-11ea-90ec-8938f7a68062.jpg)
