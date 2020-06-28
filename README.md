@@ -1,6 +1,6 @@
 # stackoverflow-backend
 
-Simple stack overflow backend
+Simple stackoverflow-backend implementation
 
 ## 1 Test
 http://stack-overflow-backend.herokuapp.com/post
